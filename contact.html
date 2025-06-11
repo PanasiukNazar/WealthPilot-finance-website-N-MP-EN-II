@@ -222,7 +222,7 @@
                                     increase your savings and investments, and
                                     secure your financial future.
                                 </p>
-                                <form>
+                                <form method="get" action="thanks.html">
                                     <div class="row g-4">
                                         <div class="col-lg-12 col-xl-6">
                                             <div class="form-floating">
@@ -231,6 +231,7 @@
                                                     class="form-control border-0"
                                                     id="name"
                                                     placeholder="Your Name"
+                                                    required
                                                 />
                                                 <label for="name"
                                                     >Your Name</label
@@ -244,17 +245,11 @@
                                                     class="form-control border-0"
                                                     id="email"
                                                     placeholder="Your Email"
+                                                    required
                                                 />
                                                 <label for="email"
                                                     >Your Email</label
                                                 >
-                                                <div
-                                                    id="result"
-                                                    style="
-                                                        color: red;
-                                                        font-size: 12px;
-                                                    "
-                                                ></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -264,6 +259,7 @@
                                                     class="form-control border-0"
                                                     id="subject"
                                                     placeholder="Subject"
+                                                    required
                                                 />
                                                 <label for="subject"
                                                     >Subject</label
@@ -277,6 +273,7 @@
                                                     placeholder="Leave a message here"
                                                     id="message"
                                                     style="height: 160px"
+                                                    required
                                                 ></textarea>
                                                 <label for="message"
                                                     >Message</label
@@ -287,7 +284,6 @@
                                             <button
                                                 class="btn btn-primary w-100 py-3"
                                                 id="submit"
-                                                onclick="sendForm()"
                                             >
                                                 Send Message
                                             </button>
